@@ -16,7 +16,7 @@ import { portfolioAnimations } from "animation";
 function Portfolio() {
   const [element, controls] = useScroll();
   return (
-  <Section id="portfolio" ref={element}>
+  <Section ref={element}>
     <div className="grid">
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-one grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-two grid-box"></motion.div>

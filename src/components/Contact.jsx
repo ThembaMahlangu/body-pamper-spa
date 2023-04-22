@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { contactAnimation } from "animation";
 
-function Contact() {
+function ContactForm() {
   const [element, controls] = useScroll();
   return (
-    <Section id="contact" ref={element}>
+    <Section ref={element}>
       <Title value="contact" />
       <motion.div className="contact"
       variants={contactAnimation}
@@ -20,33 +20,37 @@ function Contact() {
       }}
       >
         <div className="contact__title">
-          <p>Stay in touch with me </p>
+          <p>Stay in touch with us </p>
           <h2>Quick Contact</h2>
         </div>
         <div className="contact__data">
           <div className="contact__data__description">
             <h4>Just to say hi !!</h4>
             <p>
-              If you have any questions simply use the following contact details.
+              We are happy to hear from you
             </p>
             <p>
-              Business Owners to take their Online Presence 
-              to the next level. We are in the business of Bulk SMS, Digital Marketing.
+              Whether its a booking for your next appointment with us or just a general enquiry, we are happy to hear from you. Please fill in the form below and we will get back to you as soon as possible.
             </p>
             <div>
               <p>
-                <strong>Address:</strong> 9 Surrey Rd, East London, Easten Cape
+                <strong>Address:</strong> 9 Surrey Rd, Vincent, East London
               </p>
               <p>
                 <strong>Email:</strong> info@bodypampersalon.co.za
               </p>
               <p>
-                <strong>Website:</strong> www.bodypamperspa.co.za
+                <strong>Website:</strong> www.bodypampersalon.co.za
               </p>
             </div>
           </div>
           <div className="contact__data__form">
+            <select className='select'>
+              <option value="service">Booking</option>
+              <option value="service">Enquiry</option>
+            </select>
             <input type="text" placeholder='name' />
+            <input type="number" placeholder='phone' />
             <input type="email" placeholder='email' />
             <textarea placeholder='message'></textarea>
             <button>Send Message</button>
@@ -116,6 +120,11 @@ min-height: 100vh;
           color: var(--secondary-color);
         }
       }
+      .select {
+        width: 100%;
+        height: 3rem;
+        border: none;
+      }
       textarea {
         width: 100%;
         height: 50%;
@@ -168,4 +177,4 @@ min-height: 100vh;
 }
 `;
 
-export default Contact
+export default ContactForm;

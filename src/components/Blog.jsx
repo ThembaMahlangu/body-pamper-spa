@@ -26,7 +26,7 @@ function Blog() {
       description: "Keep your body and mind it pure and clean for the soul to reside in. Our Spa Offer yoga classes in areas. creates real benefits for the person's health.",
     },
   ]
-  return <Section id="blog" ref={element}>
+  return <Section ref={element}>
     <Title value="Blog" />
     <div className="blogs">
         {blogsData.map(({ title, type, description }) => {

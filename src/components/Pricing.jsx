@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { pricingAnimation } from "animation";
 
-function Pricing() {
+function PricingTab() {
   const [element, controls] = useScroll();
   const plans = [
     {
@@ -284,4 +284,4 @@ overflow: hidden;
   }
 }
 `;
-export default Pricing
+export default PricingTab

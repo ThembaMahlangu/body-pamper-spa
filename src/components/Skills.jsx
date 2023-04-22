@@ -30,7 +30,7 @@ function Skills() {
     },
   ];
   return (
-    <Section id="skills" ref={element}>
+    <Section ref={element}>
       <Title value="skills" />
       <div className="skills__title">
         <p>Our Skills</p>

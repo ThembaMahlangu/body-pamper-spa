@@ -5,10 +5,11 @@ import play from "assets/play.png";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
+import { BsPlay } from 'react-icons/bs';
 
 function Home() {
   return (
-    <Section id="home">
+    <Section>
       <Navbar />
       <motion.div className="home"
       variants={homeAnimation}
@@ -19,11 +20,15 @@ function Home() {
             <h1>Body Pamper Spa</h1>
           </div>  
           <div className="subTitle">
-            <p>
-              Body Pamper Spa is a leading beauty salon in the city. We offer a wide range of beauty services to our clients. We have a team of highly skilled and experienced professionals who are dedicated to providing the best services to our clients.
-            </p>  
+            {/* <p>
+              Body Pamper Spa is a leading beauty salon in the city.
+              We offer a wide range of beauty services to our clients. 
+              We have a team of highly skilled and experienced professionals who are dedicated to providing the best services to our clients.
+            </p>   */}
           </div>
-          <img src={play} alt="Play Button" />
+            <a href='/contact'>
+              <BsPlay className="play"/>
+            </a>
         </div>  
       </motion.div>
 
@@ -67,7 +72,7 @@ function Home() {
 }
 
 const Section = styled.section`
-  background: url(${home}) no-repeat center;
+  background: url(${"https://d1ooscleda9ip9.cloudfront.net/Upload/669/CMS/News/Photos/19c7c978-7e5.jpg"}) no-repeat center;
   min-height: 100vh;
   background-size: cover;
   position: relative;
@@ -86,7 +91,15 @@ const Section = styled.section`
         h1 {
           font-size: 5rem;
           line-height: 5.3rem;
+          padding-bottom: 8rem;
+          justify-content: relative;
         }
+      }
+      .play {
+        width: 5rem;
+        height: 5rem;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
       }
       .subTitle {
         p {

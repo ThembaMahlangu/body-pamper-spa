@@ -1,36 +1,27 @@
-import Blog from 'components/Blog';
-import Contact from 'components/Contact';
-import Footer from 'components/Footer';
-import Home from 'components/Home';
-import Milestones from 'components/Milestones';
-import Portfolio from 'components/Portfolio';
-import Pricing from 'components/Pricing';
-import ScrollToTop from 'components/ScrollToTop';
-import Services from 'components/Services';
-import Skills from 'components/Skills';
-import Testimonials from 'components/Testimonials';
-import Video from 'components/Video';
-import { motion } from 'framer-motion';
+import Contact from 'pages/Contact';
+import Pricing from 'pages/Pricing';
+import Services from 'pages/Services';
+import HomePage from 'pages/Home';
+import OurWork from 'pages/OurWork';
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import About from 'pages/About';
+import AutoScroll from 'components/AutoScoll';
 
 function App() {
   return (
-    <motion.div initial="hidden" animate="show">
-      
-      <Home />
-      <Services />
-      <Portfolio />
-      <Milestones />
-      <Blog />
-      <Video />
-      <Pricing />
-      <Testimonials />
-      <Skills />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
-    </motion.div>
-  )
+    <>
+     <AutoScroll/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/portfolio" element={<OurWork />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App

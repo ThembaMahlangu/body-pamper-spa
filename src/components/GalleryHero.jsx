@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
+import home from "assets/home.png";
+import play from "assets/play.png";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation } from "animation";
 
-function AboutHero() {
+function GalleryHero() {
   return (
     <Section>
       <Navbar />
@@ -14,8 +16,8 @@ function AboutHero() {
       >
         <div className="content">
           <div className="title">
-            <h1>About Us</h1>
-          </div> 
+            <h1>Our Gallery</h1>
+          </div>
         </div>  
       </motion.div>
     </Section>
@@ -23,7 +25,7 @@ function AboutHero() {
 }
 
 const Section = styled.section`
-  background: url(${"https://www.collinsdictionary.com/images/full/beautysalon_532739713_1000.jpg"}) no-repeat center;
+  background: url(${"https://d1ooscleda9ip9.cloudfront.net/Upload/669/CMS/News/Photos/19c7c978-7e5.jpg"}) no-repeat center;
   max-height: 50vh;
   background-size: cover;
   position: relative;
@@ -75,6 +77,7 @@ const Section = styled.section`
           h1 {
             font-size: 4rem;
             line-height: 4rem;
+            padding-bottom: 4rem;
           }
         }
       }
@@ -88,4 +91,4 @@ const Section = styled.section`
   }
 `;
 
-export default AboutHero;
+export default GalleryHero;

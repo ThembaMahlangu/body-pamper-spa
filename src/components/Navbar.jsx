@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from "styled-components";
 import logo from "assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -7,10 +8,15 @@ import { useScroll } from "components/useScroll";
 import { motion } from "framer-motion";
 import { navAnimation } from "animation";
 
-
 function Navbar() {
   const [isNavOpen,setIsNavOpen] = useState(false);
   const [element, controls] = useScroll();
+  const location = useLocation();
+  
+  const isActive = (href) => {
+    return href === location.pathname ? 'active' : '';
+  };
+  
   return <Nav ref={element}
   variants={navAnimation}
   transition={{ delay: 0.1 }}
@@ -18,8 +24,10 @@ function Navbar() {
   state={isNavOpen ? 1 : 0}
   >
     <div className="brand__container">
-      <a href="#" className='brand'>
-        <img src={logo} alt="logo" />
+      <a href="/" className='brand'>
+        <span className="logo" style={{ textDecoration: "none", color: 'white', fontWeight: 600}}>
+          <h1>BODY PAMPER SPA</h1>
+        </span>
       </a>  
       <div className="toggle">
         {isNavOpen ? (
@@ -35,26 +43,26 @@ function Navbar() {
       </div>
     </div>
     <div className={`links ${isNavOpen ? "show" : ""}`}>
-    <ul>
-        <li className="active">
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#portfolio">Our Work</a>
-          </li>
-          <li>
-            <a href="#blog">Featured Services</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+      <ul>
+        <li className={isActive('/')}>
+          <a href="/">Home</a>
+        </li>
+        <li className={isActive('/about')}>
+          <a href="/about">About</a>
+        </li>
+        <li className={isActive('/portfolio')}>
+          <a href="/portfolio">Gallery</a>
+        </li>
+        <li className={isActive('/services')}>
+          <a href="/services">Services</a>
+        </li>
+        <li className={isActive('/pricing')}>
+          <a href="/pricing">Pricing</a>
+        </li>
+        <li className={isActive('/contact')}>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
     </div>
   </Nav>
 }
