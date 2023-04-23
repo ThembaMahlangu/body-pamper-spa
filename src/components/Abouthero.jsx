@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation } from "animation";
+import hero from "assets/views1.png"
 
 function AboutHero() {
   return (
@@ -23,7 +24,7 @@ function AboutHero() {
 }
 
 const Section = styled.section`
-  background: url(${"https://www.collinsdictionary.com/images/full/beautysalon_532739713_1000.jpg"}) no-repeat center;
+  background: url(${hero}) no-repeat center;
   max-height: 50vh;
   background-size: cover;
   position: relative;

@@ -44,6 +44,7 @@ const Section = styled.section`
         h1 {
           font-size: 5rem;
           line-height: 5.3rem;
+          color: var(--primary-color);
         }
       }
       .subTitle {

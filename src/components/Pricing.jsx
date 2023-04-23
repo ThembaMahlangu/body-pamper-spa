@@ -7,6 +7,7 @@ import play from "assets/play.png";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { pricingAnimation } from "animation";
+import { BsCloudLightning, BsDownload, BsFillSendPlusFill, BsPlay, BsSendExclamation, BsSendPlus } from 'react-icons/bs';
 
 function PricingTab() {
   const [element, controls] = useScroll();
@@ -27,35 +28,35 @@ function PricingTab() {
 
   const data = [
     {
-      value: "Full face Rs.250",
+      value: "Full face R 250",
       type: "Basic",
     },
     {
-      value: "Cheeks Rs. 90",
+      value: "Cheeks R 90",
       type: "Basic",
     },
     {
-      value: "Jawline Rs.50",
+      value: "Jawline R 50",
       type: "Basic",
     },
     {
-      value: "Lower Lip Rs.50",
+      value: "Lower Lip R 50",
       type: "Basic",
     },
     {
-      value: "Upper Lip Rs.50",
+      value: "Upper Lip R 50",
       type: "Basic",
     },
     {
-      value: "Under arms Rs.100",
+      value: "Under arms R 100",
       type: "Basic",
     },
     {
-      value: "Full Legs Rs.450",
+      value: "Full Legs R 450",
       type: "Pro",
     },
     {
-      value: "Half Legs Rs.300",
+      value: "Half Legs R 300",
       type: "Pro",
     },
     {
@@ -95,7 +96,7 @@ function PricingTab() {
               <div className="pricing__plan__name">
                 <h2>{name}</h2>
                 <div className="pricing__plan__name__price">
-                  <span>$</span>
+                  <span>R</span>
                   <p>{price}</p>
                 </div>
               </div>
@@ -124,8 +125,8 @@ function PricingTab() {
                   })}
                 </ul>
                 <div className="pricing__plan__content__actions">
-                  <span>Order Now</span>
-                  <img src={play} alt="Order Now" />
+                  <span>Book Now</span>
+                  <BsFillSendPlusFill className='play'/>
                 </div>
               </div>
             </motion.div>
@@ -165,6 +166,12 @@ overflow: hidden;
     color: var(--primary-color);
     font-size: 2rem;
   }
+}
+.play {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 0;
+
 }
 .pricing {
   display: grid;

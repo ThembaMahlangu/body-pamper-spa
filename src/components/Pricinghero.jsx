@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import home from "assets/home.png";
-import play from "assets/play.png";
+import home from "assets/views2.png";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation } from "animation";
@@ -45,6 +44,7 @@ const Section = styled.section`
           font-size: 5rem;
           line-height: 5.3rem;
           padding-bottom: 5rem;
+          color: var(--primary-color);
         }
       }
     }

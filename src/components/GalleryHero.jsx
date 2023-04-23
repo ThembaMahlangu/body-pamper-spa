@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import home from "assets/home.png";
-import play from "assets/play.png";
+import heroimage from "assets/views4.png"
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation } from "animation";
@@ -25,7 +24,7 @@ function GalleryHero() {
 }
 
 const Section = styled.section`
-  background: url(${"https://d1ooscleda9ip9.cloudfront.net/Upload/669/CMS/News/Photos/19c7c978-7e5.jpg"}) no-repeat center;
+  background: url(${heroimage}) no-repeat center;
   max-height: 50vh;
   background-size: cover;
   position: relative;
@@ -44,6 +43,7 @@ const Section = styled.section`
         h1 {
           font-size: 5rem;
           line-height: 5.3rem;
+          color: var(--primary-color);
         }
       }
       .subTitle {

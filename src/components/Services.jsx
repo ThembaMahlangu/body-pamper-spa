@@ -9,23 +9,38 @@ import { useScroll } from "components/useScroll";
 import { motion } from "framer-motion";
 import { servicesAnimations } from "animation";
 
-function Services() {
+function ServicesTab() {
   const [element, controls] = useScroll();
 
   const data = [
     {
-      type: "Blowout",
-      text: "Shampoo and blow dry. If you are looking to celebrate your special day with us, please note we only have 3 stylists scheduled",
+      type: "Facial",
+      text: "Facial is a skin care treatment for the face, including steam, exfoliation, extraction, creams, lotions, facial masks, peels, and massage. It is normally performed in beauty salons, but it is also a common spa treatment.",
       image: service1,
     },
     {
-      type: "Olaplex",
-      text: "Hair treatment helping keep coloured hair healthy from the inside If you are looking to celebrate your special day with us.",
+      type: "Bridal Makeup",
+      text: "Bridal makeup is makeup worn by the bride on her wedding day. It is meant to enhance her natural beauty and complement her wedding dress. It is also meant to last through photographs, tears, and the many hours of the wedding day.",
       image: service2,
     },
     {
-      type: "Retouch",
-      text: "We bring to you a bouquet of services to remain worry free about your looks. We have made effortless beauty equipment and products.",
+      type: "Manicures",
+      text: "Manicure is a cosmetic beauty treatment for the fingernails and hands performed at home or in a nail salon. Manicures are also known as nail treatments, hand treatments, hand therapy, hand massages, or nail care.",
+      image: service3,
+    },
+    {
+      type: "Pedicures",
+      text: "Pedicure is a cosmetic treatment of the feet and toenails, analogous to a manicure. Pedicures are popular throughout the world and are a common spa treatment. Pedicures are also known as foot spas, foot baths, foot soaks, or foot treatments.",
+      image: service1,
+    },
+    {
+      type: "Massages",
+      text: "Massage is the manipulation of soft tissues in the body. Massage techniques are commonly applied with hands, fingers, elbows, knees, forearms, feet, or a device. The purpose of massage is generally for the treatment of body stress or pain.",
+      image: service2,
+    },
+    {
+      type: "Waxing",
+      text: "Wa",
       image: service3,
     },
   ];
@@ -113,4 +128,4 @@ min-height: 100vh;
 }
 `;
 
-export default Services
+export default ServicesTab;

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import home from "assets/home.png";
-import play from "assets/play.png";
+import heropic from "assets/views4.png"
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
@@ -72,7 +71,7 @@ function Home() {
 }
 
 const Section = styled.section`
-  background: url(${"https://d1ooscleda9ip9.cloudfront.net/Upload/669/CMS/News/Photos/19c7c978-7e5.jpg"}) no-repeat center;
+  background: url(${heropic}) no-repeat center;
   min-height: 100vh;
   background-size: cover;
   position: relative;
@@ -93,6 +92,7 @@ const Section = styled.section`
           line-height: 5.3rem;
           padding-bottom: 8rem;
           justify-content: relative;
+          color: var(--primary-color);
         }
       }
       .play {
@@ -120,6 +120,11 @@ const Section = styled.section`
       grid-template-columns: repeat(3, 1fr);
       gap: 4rem;
       color: #fff;
+    }
+    .grid {
+      p {
+        color: var(--primary-color);
+      }
     }
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {

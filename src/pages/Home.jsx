@@ -7,11 +7,17 @@ import React from 'react'
 import Home from 'components/Home';
 import Footer from 'components/Footer';
 import ScrollToTop from 'components/ScrollToTop';
+import Portfolio from 'components/Portfolio';
+import Testimonials from 'components/Testimonials';
+import Video from 'components/Video';
 
 function HomePage() {
   return (
     <motion.div>
         <Home/>
+        <Testimonials/>
+        <Portfolio/>
+        <Video/>
         <Footer/>
         <ScrollToTop/>
     </motion.div>

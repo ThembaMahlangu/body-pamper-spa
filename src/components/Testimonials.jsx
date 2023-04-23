@@ -31,6 +31,7 @@ function Testimonials() {
   return (
     <Section ref={element}>
       <div className="container">
+        <h2 className="title-big">Testimonials</h2>
         <motion.div className="testimonials"
         variants={testimonialsAnimations}
         animate={controls}
@@ -136,6 +137,17 @@ overflow: hidden;
     .designation {
       height: 8rem;
     }
+  }
+  .title-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: #fff;
+    font-size: 2.5rem;
   }
   .controls{
     display: flex;
