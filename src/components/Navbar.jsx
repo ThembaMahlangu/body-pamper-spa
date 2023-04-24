@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from "styled-components";
-import logo from "assets/logo.png";
+import logo from "assets/nicer-logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { useScroll } from "components/useScroll";
@@ -25,8 +25,12 @@ function Navbar() {
   >
     <div className="brand__container">
       <a href="/" className='brand'>
-        <span className="logo" style={{ textDecoration: "none", color: 'white', fontWeight: 600}}>
-          <h1>BODY PAMPER SPA</h1>
+        <span className="logo glow" style={{ textDecoration: "none", color: 'white', fontWeight: 600}}>
+        <img 
+          src={logo} 
+          alt="Body Pamper Spa Logo" 
+          className="logo" 
+          style={{ width: 125, height: 125 }} />
         </span>
       </a>  
       <div className="toggle">
@@ -77,6 +81,11 @@ const Nav = styled(motion.nav)`
     margin: 0 2rem;
     .toggle {
       display: none;
+    }
+    .logo {
+      margin: 0 auto;
+      box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
     }
   }
   .links {

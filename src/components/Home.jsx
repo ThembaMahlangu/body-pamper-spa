@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import heropic from "assets/views4.png"
+import heropic from "assets/views1.png"
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
