@@ -60,7 +60,7 @@ function Navbar() {
           <a href="/pricing">Pricing</a>
         </li>
         <li className={isActive('/contact')}>
-          <a href="/contact">Contact</a>
+          <a href="/contact">Contact Us</a>
         </li>
       </ul>
     </div>

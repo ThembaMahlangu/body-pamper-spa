@@ -30,11 +30,14 @@ function ContactForm() {
               We are happy to hear from you
             </p>
             <p>
-              Whether its a booking for your next appointment with us or just a general enquiry, we are happy to hear from you. Please fill in the form below and we will get back to you as soon as possible.
+              Whether it's a booking for your next appointment with us or just a general enquiry, we are happy to hear from you. Please fill in the form below and we will get back to you as soon as possible.
             </p>
             <div>
               <p>
                 <strong>Address:</strong> 9 Surrey Rd, Vincent, East London
+              </p>
+              <p>
+                <strong>Phone:</strong> +2743 721 3138
               </p>
               <p>
                 <strong>Email:</strong> info@bodypampersalon.co.za
