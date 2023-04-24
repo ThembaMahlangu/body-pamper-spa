@@ -51,7 +51,7 @@ function Navbar() {
           <a href="/about">About</a>
         </li>
         <li className={isActive('/portfolio')}>
-          <a href="/portfolio">Gallery</a>
+          <a href="/gallery">Gallery</a>
         </li>
         <li className={isActive('/services')}>
           <a href="/services">Services</a>

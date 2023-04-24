@@ -18,15 +18,15 @@ function Video() {
         duration: 0.8,
       }}
       >
-      <iframe
-          width="960"
-          height="515"
-          src=""
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+      <h2 className='section-title'>Tips and Tricks for your Hair</h2>
+      <iframe 
+        width="853" 
+        height="480" 
+        src="https://www.youtube.com/embed/R8T7AuINsTs" 
+        title="Best Natural Hair Salon" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
       </motion.div>
     </Section>
   );
@@ -41,6 +41,12 @@ align-items: center;
 position: relative;
 .video {
   z-index: 10;
+}
+.section-title {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 280px) and (max-width: 1080px) { 
   height: 100%;
