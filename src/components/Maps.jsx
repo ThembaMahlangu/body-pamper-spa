@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { videoAnimations } from "animation";
 import { useScroll } from "./useScroll";
 
-function Video() {
+function Maps() {
   const [element, controls] = useScroll();
   return (
     <Section ref={element}>
@@ -18,15 +18,16 @@ function Video() {
         duration: 0.8,
       }}
       >
-      <h2 className='section-title'>Tips and Tricks for your Hair</h2>
-      <iframe 
-        width="853" 
-        height="480" 
-        src="https://www.youtube.com/embed/R8T7AuINsTs" 
-        title="Best Natural Hair Salon" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
+      <h2 className='section-title'>Find Us On Maps</h2>
+        <iframe 
+          title="Body Pamper on Google Maps"  
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.807643068928!2d27.900340574872487!3d-32.98247641528644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e66e0391afd04bb%3A0x79870c7ed0f735a8!2sBody%20Pamper%20Salon!5e0!3m2!1sen!2sza!4v1682528334993!5m2!1sen!2sza" 
+          width="600" 
+          height="450" 
+          style={{borderRadius: 5, border: 100}}
+          allowfullscreen
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </motion.div>
     </Section>
@@ -61,4 +62,4 @@ position: relative;
 }
 `;
 
-export default Video
+export default Maps;

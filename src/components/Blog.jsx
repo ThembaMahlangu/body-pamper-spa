@@ -26,8 +26,14 @@ function Blog() {
       description: "Keep your body and mind it pure and clean for the soul to reside in. Our Spa Offer yoga classes in areas. creates real benefits for the person's health.",
     },
   ]
+
+  //function for navigating to gallery page when clicking see more or the image
+  const navigateToGallery = () => {
+    window.location.href = "/gallery";
+  }
+  
   return <Section ref={element}>
-    <Title value="Blog" />
+    <Title value="Featured" />
     <div className="blogs">
         {blogsData.map(({ title, type, description }) => {
           return (
@@ -48,9 +54,9 @@ function Blog() {
                 <div className="description">
                   <p>{description}</p>  
                 </div>
-                <div className="more">
+                <div className="more" onClick={navigateToGallery}>
                   <img src={play} alt="Play" />
-                  <span>Read More</span>  
+                  <span>See More</span>  
                 </div>
             </motion.div>
           )

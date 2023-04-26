@@ -26,7 +26,7 @@ function ServicesHero() {
 
 const Section = styled.section`
   background: url(${home}) no-repeat center;
-  max-height: 50vh;
+  max-height: 35vh;
   background-size: cover;
   position: relative;
   .home{
@@ -44,6 +44,7 @@ const Section = styled.section`
         h1 {
           font-size: 5rem;
           line-height: 5.3rem;
+          padding-bottom: 5rem;
           color: var(--primary-color);
         }
       }
@@ -78,6 +79,7 @@ const Section = styled.section`
           h1 {
             font-size: 4rem;
             line-height: 4rem;
+            display: none;
           }
         }
       }

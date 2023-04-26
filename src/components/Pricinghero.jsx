@@ -72,6 +72,7 @@ const Section = styled.section`
           h1 {
             font-size: 4rem;
             line-height: 4rem;
+            display: none;
           }
         }
       }

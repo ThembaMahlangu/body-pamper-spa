@@ -25,7 +25,7 @@ function GalleryHero() {
 
 const Section = styled.section`
   background: url(${heroimage}) no-repeat center;
-  max-height: 50vh;
+  max-height: 30vh;
   background-size: cover;
   position: relative;
   .home{
@@ -44,6 +44,7 @@ const Section = styled.section`
           font-size: 5rem;
           line-height: 5.3rem;
           color: var(--primary-color);
+          display: none;
         }
       }
       .subTitle {

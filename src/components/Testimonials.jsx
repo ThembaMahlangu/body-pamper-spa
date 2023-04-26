@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { testimonialsAnimations } from "animation";
+import Title from './Title';
 
 function Testimonials() {
   const [element, controls] = useScroll();
@@ -30,8 +31,8 @@ function Testimonials() {
   ];
   return (
     <Section ref={element}>
+      <Title value="Testimonials" />
       <div className="container">
-        <h2 className="title-big">Testimonials</h2>
         <motion.div className="testimonials"
         variants={testimonialsAnimations}
         animate={controls}

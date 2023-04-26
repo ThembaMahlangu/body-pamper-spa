@@ -10,13 +10,18 @@ import ScrollToTop from 'components/ScrollToTop';
 import Portfolio from 'components/Portfolio';
 import Testimonials from 'components/Testimonials';
 import Video from 'components/Video';
+import Milestones from 'components/Milestones';
+import Blog from 'components/Blog';
+import Maps from 'components/Maps';
 
 function HomePage() {
   return (
     <motion.div>
         <Home/>
-        <Testimonials/>
-        <Portfolio/>
+        <Blog/>
+        <Maps/>
+        <Milestones/>
+        
         <Video/>
         <Footer/>
         <ScrollToTop/>

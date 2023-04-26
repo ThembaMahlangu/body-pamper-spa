@@ -68,6 +68,16 @@ function PricingTab() {
       type: "Expert",
     },
   ]
+  
+  // function to navigate to the contact page
+  const navigateToContact = () => {
+    window.location.href = "/contact";
+  }
+
+  //Make the mouse cursor a pointer when hovering over the book now and play buttons
+  const changeCursor = (e) => {
+    e.target.style.cursor = "pointer";
+  }
 
   return (
     <Section ref={element}>
@@ -124,7 +134,7 @@ function PricingTab() {
                     );
                   })}
                 </ul>
-                <div className="pricing__plan__content__actions">
+                <div onClick={navigateToContact} className="pricing__plan__content__actions" onMouseOver={changeCursor}>
                   <span>Book Now</span>
                   <BsFillSendPlusFill className='play'/>
                 </div>
