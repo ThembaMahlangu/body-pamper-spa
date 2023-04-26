@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import loadmore from "assets/loadmore.png";
 import portfolio3 from "assets/portfolio3.jpg";
@@ -15,6 +15,16 @@ import { portfolioAnimations } from "animation";
 
 function Portfolio() {
   const [element, controls] = useScroll();
+  const [showSecondGrid, setSecondGrid] = useState(false);
+
+  const handleLoadMoreClick = () => {
+    setSecondGrid(true);
+  }
+
+  const changeCursor = (e) => {
+    e.target.style.cursor = "pointer";
+  }
+
   return (
   <Section ref={element}>
     <div className="portfolio-title">
@@ -30,6 +40,7 @@ function Portfolio() {
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-seven grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-eight grid-box"></motion.div>
     </div>
+    {showSecondGrid && (
     <div className="grid">
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-one grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-two grid-box"></motion.div>
@@ -40,7 +51,8 @@ function Portfolio() {
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-seven grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-eight grid-box"></motion.div>
     </div>
-    <div className="portfolio-more">
+    )}
+    <div className="portfolio-more" onClick={handleLoadMoreClick} onMouseOver={changeCursor}>
         <span>Load More</span>
         <img src={loadmore} alt="Load More" />
     </div>
