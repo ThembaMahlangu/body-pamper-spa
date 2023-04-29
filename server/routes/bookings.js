@@ -40,8 +40,8 @@ router.post('/', [
         booking.save().then((result) => {
             const mailOptions = {
                 from: 'Body Pamper Web Notifications <',
-                to: 'jvstraphael@gmail.com',
-                subject: 'New Form Submission',
+                to: 'info@bodypampersalon.co.za',
+                subject: `New ${req.body.service} Submission`,
                 text: `Hello Admin,
 
 You have a new ${req.body.service} from ${req.body.name}

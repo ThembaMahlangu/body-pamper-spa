@@ -14,7 +14,7 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    const url = `http://localhost:8000/api/bookings`
+    const url = `https://bodypamper-server.onrender.com/api/bookings`
     const data = {
       service: selectedOption,
       name: e.target.name.value,
@@ -62,10 +62,10 @@ function ContactForm() {
                 <strong>Address:</strong> 9 Surrey Rd, Vincent, East London
               </p>
               <p>
-                <strong>Phone:</strong> +2743 721 3138
+                <strong>Phone:</strong> +27 43 721 3138
               </p>
               <p>
-                <strong>Cell:</strong> +2772 123 4567
+                <strong>Cell:</strong> +27 84 750 1407
               </p>
               <p>
                 <strong>Email:</strong> info@bodypampersalon.co.za
