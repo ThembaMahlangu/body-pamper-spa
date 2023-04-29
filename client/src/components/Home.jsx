@@ -56,13 +56,15 @@ function Home() {
             </div> 
             <div className="col">
                 <strong>Services</strong>
-                <p>Sparking</p>
-                <p>SPA Cream</p>
+                <p>Facials</p>
+                <p>Massages</p>
+                <p>Manicures and Pedicures</p>
             </div> 
             <div className="col">
                 <strong>Working Hours</strong>
                 <p>Monday to Friday</p>
                 <p>08:00 to 18:00</p>
+                <p>Saturday 09:00 to 16:00</p>
             </div>   
           </div>
       </motion.div>

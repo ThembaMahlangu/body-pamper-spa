@@ -1,12 +1,23 @@
 import React from 'react';
 import styled from "styled-components";
-import { BsFacebook, BsTwitter, BsYoutube, BsBehance, BsInstagram } from 'react-icons/bs';
+import { BsFacebook, BsTwitter, BsYoutube, BsBehance, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { footerTextAnimation } from "animation";
 
 function Footer() {
   const [element, controls] = useScroll();
+  const navigateToFacebook = () => {
+    window.location.href = "https://www.facebook.com/BodyPamperSalon";
+  }
+
+  const navigateToTwitter = () => {
+    window.location.href = "https://www.linkedin.com/in/lambert-fungai-maraura-2a7a594a/?originalSubdomain=za";
+  }
+
+  const navigateToInstagram = () => {
+    window.location.href = "https://www.instagram.com/explore/locations/802676039/body-pamper-salon/";
+  }
   return (
     <Foot ref={element}>
       <motion.span
@@ -19,6 +30,10 @@ function Footer() {
       }}
       >
         &copy; Body Pamper Spa 2023
+
+        &nbsp;|&nbsp;
+        
+        Powered by <a href="wa.me/+27769360246">AsyncFam</a>
       </motion.span>
       <motion.div className="footer__social__icons"
       variants={footerTextAnimation}
@@ -29,10 +44,9 @@ function Footer() {
         duration: 0.8,
       }}  
       >
-        <BsFacebook />
-        <BsTwitter />
-        <BsYoutube />
-        <BsInstagram />
+        <BsFacebook onClick={navigateToFacebook} />
+        <BsLinkedin onClick={navigateToTwitter}/>
+        <BsInstagram onClick={navigateToInstagram} />
       </motion.div>
     </Foot>
   )

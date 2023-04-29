@@ -18,16 +18,16 @@ function Video() {
         duration: 0.8,
       }}
       >
-      <h2 className='section-title'>Tips and Tricks for your Hair</h2>
+      <h2 className='section-title'>Body Pamper Media</h2>
       <iframe 
         width="853" 
         height="480" 
-        src="https://www.youtube.com/embed/R8T7AuINsTs" 
-        title="Best Natural Hair Salon" 
+        src="https://www.youtube.com/embed/4YlrC6ANrSE"
+        title="East London&#39;s Finest Spa || Body Pamper Spa &amp; Salon"
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>
-        </iframe>
+      </iframe>
       </motion.div>
     </Section>
   );
