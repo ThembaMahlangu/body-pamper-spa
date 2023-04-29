@@ -1,12 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import Title from './Title';
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { contactAnimation } from "animation";
+import axios from "axios";
 
 function ContactForm() {
   const [element, controls] = useScroll();
+  const [selectedOption, setSelectedOption] = useState('booking');
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    const url = `http://localhost:8000/api/bookings`
+    const data = {
+      service: selectedOption,
+      name: e.target.name.value,
+      phone: e.target.phone.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+    await axios.post(url, data).then(() => {
+      setSubmitting(false);
+      alert("Thank you, we will get back to you shortly");
+      e.target.reset();
+    }).catch(() => {
+      setSubmitting(false);
+      alert("Something went wrong. Please try again.");
+    });
+  };
+
   return (
     <Section ref={element}>
       <Title value="contact" />
@@ -40,6 +65,9 @@ function ContactForm() {
                 <strong>Phone:</strong> +2743 721 3138
               </p>
               <p>
+                <strong>Cell:</strong> +2772 123 4567
+              </p>
+              <p>
                 <strong>Email:</strong> info@bodypampersalon.co.za
               </p>
               <p>
@@ -47,17 +75,19 @@ function ContactForm() {
               </p>
             </div>
           </div>
-          <div className="contact__data__form">
-            <select className='select'>
-              <option value="service">Booking</option>
-              <option value="service">Enquiry</option>
-            </select>
-            <input type="text" placeholder='name' />
-            <input type="number" placeholder='phone' />
-            <input type="email" placeholder='email' />
-            <textarea placeholder='message'></textarea>
-            <button>Send Message</button>
-          </div>
+          <form className="contact__data__form" onSubmit={handleSubmit}>
+              <select name='service' className='select' value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)}>
+                <option value="booking">Booking</option>
+                <option value="enquiry">Enquiry</option>
+              </select>
+              <input name='name' type="text" placeholder='name' />
+              <input name='phone' type="number" placeholder='phone' />
+              <input name='email' type="email" placeholder='email' />
+              <textarea name='message' placeholder='message'></textarea>
+              <button type='submit'>
+                {submitting ? "Submitting..." : (selectedOption === 'booking' ? 'Submit Booking' : 'Submit Enquiry')}
+              </button>
+          </form>
         </div>
       </motion.div>
     </Section>

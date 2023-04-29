@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import heropic from "assets/views1.png"
+import heropic from "assets/2.png"
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
@@ -138,6 +138,9 @@ const Section = styled.section`
             font-size: 4rem;
             line-height: 4rem;
           }
+        }
+        .play {
+          display: none;
         }
       }
     }

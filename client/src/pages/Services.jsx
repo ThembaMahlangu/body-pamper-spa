@@ -1,3 +1,4 @@
+import FloatingWhatsAppButton from 'components/FloatingButton';
 import Footer from 'components/Footer';
 import ScrollToTop from 'components/ScrollToTop';
 import ServicesTab from 'components/Services';
@@ -12,6 +13,7 @@ function Services() {
       <ServicesTab/>
       <Footer/>
       <ScrollToTop/>
+      <FloatingWhatsAppButton/>
     </motion.div>
   )
 }

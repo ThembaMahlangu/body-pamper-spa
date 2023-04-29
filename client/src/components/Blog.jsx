@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
 import play from "assets/play.png";
-import home from "assets/home.png";
+import pic1 from "assets/pedicure.jpg";
+import pic2 from "assets/womeninpink.jpg";
+import pic3 from "assets/brightlight.jpg";
 import Title from './Title';
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
@@ -10,24 +12,26 @@ import { blogsAnimation } from "animation";
 function Blog() {
   const [element, controls] = useScroll();
   const blogsData = [
-    {
-      title:"PARLOUR JOURNAL",
-      type: "SPA",
-      description: "Our blog is intended to help answer your hair related questions and provide information about healthy hair choices and products.",
-    },
-    {
-      title:"REFELXOLOGY SKY",
-      type: "Relax",
-      description: "Reflexologists believe that these reflex points, pressing them creates real benefits for the person's health. If you have any questions, please email",
-    },
-    {
-      title:"MEDITATION SUN",
-      type: "Yoga",
-      description: "Keep your body and mind it pure and clean for the soul to reside in. Our Spa Offer yoga classes in areas. creates real benefits for the person's health.",
-    },
-  ]
+  {
+    title:"Pedicure",
+    type: "Nails",
+    description: "We provide the best pedicure in town, be sure to check out our latest offering when it comes to prices",
+    image: pic1
+  },
+  {
+    title:"Massage",
+    type: "Relax",
+    description: "Reflexologists believe that these reflex points, pressing them creates real benefits for the person's health. If you have any questions, please email",
+    image: pic2
+  },
+  {
+    title:"Facial",
+    type: "Face",
+    description: "Keep your skin looking younger and softer, Our spa treatment is meant to provide you with the best.",
+    image: pic3
+  },
+];
 
-  //function for navigating to gallery page when clicking see more or the image
   const navigateToGallery = () => {
     window.location.href = "/gallery";
   }
@@ -35,7 +39,7 @@ function Blog() {
   return <Section ref={element}>
     <Title value="Featured" />
     <div className="blogs">
-        {blogsData.map(({ title, type, description }) => {
+        {blogsData.map(({ title, type, description, image }) => {
           return (
             <motion.div className="blog"
               variants={blogsAnimation}
@@ -44,9 +48,9 @@ function Blog() {
                 delay: 0.03,
                 type: "tween",
                 duration: 0.8,
-              }}
+              }}s
             >
-              <div className="image"></div>
+              <img className="image" src={image}/>
               <div className="title">
                 <h3>{title}</h3>  
               </div>
@@ -79,7 +83,6 @@ position: relative;
     gap: 1rem;
     .image {
       height: 15rem;
-      background: url(${home}) no-repeat center center;
       background-size: cover;
       display: flex;
       justify-content: center;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation } from "animation";
-import hero from "assets/views1.png"
+import hero from "assets/views4.png"
 
 function AboutHero() {
   return (

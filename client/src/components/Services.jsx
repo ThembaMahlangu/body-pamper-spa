@@ -19,11 +19,6 @@ function ServicesTab() {
       image: service1,
     },
     {
-      type: "Bridal Makeup",
-      text: "Bridal makeup is makeup worn by the bride on her wedding day. It is meant to enhance her natural beauty and complement her wedding dress. It is also meant to last through photographs, tears, and the many hours of the wedding day.",
-      image: service2,
-    },
-    {
       type: "Manicures",
       text: "Manicure is a cosmetic beauty treatment for the fingernails and hands performed at home or in a nail salon. Manicures are also known as nail treatments, hand treatments, hand therapy, hand massages, or nail care.",
       image: service3,
@@ -39,8 +34,8 @@ function ServicesTab() {
       image: service2,
     },
     {
-      type: "Waxing",
-      text: "Wa",
+      type: "House Calls",
+      text: "If you think you could use our service by us coming to you, feel free as we are available to come to you. We charge R9 per km.",
       image: service3,
     },
   ];

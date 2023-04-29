@@ -4,7 +4,7 @@ import ScrollToTop from 'components/ScrollToTop';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Skills from 'components/Skills';
-import StyledAboutSection from 'components/AboutUsInfo';
+import FloatingWhatsAppButton from 'components/FloatingButton';
 
 function About() {
   return (
@@ -30,6 +30,7 @@ function About() {
       <Skills/>
       <Footer/>
       <ScrollToTop/>
+      <FloatingWhatsAppButton/>
     </motion.div>
   )
 }

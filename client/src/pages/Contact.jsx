@@ -1,5 +1,6 @@
 import ContactForm from 'components/Contact';
 import ContactHero from 'components/Contacthero';
+import FloatingWhatsAppButton from 'components/FloatingButton';
 import Footer from 'components/Footer';
 import Maps from 'components/Maps';
 import ScrollToTop from 'components/ScrollToTop';
@@ -14,6 +15,7 @@ function Contact() {
       <Maps/>
       <Footer/>
       <ScrollToTop/>
+      <FloatingWhatsAppButton/>
     </motion.div>
   )
 }

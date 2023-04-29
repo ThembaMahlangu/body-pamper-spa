@@ -3,78 +3,19 @@ import styled from "styled-components";
 import Title from './Title';
 import pricing1 from "assets/pricing1.png";
 import pricing2 from "assets/pricing2.png";
-import play from "assets/play.png";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { pricingAnimation } from "animation";
-import { BsCloudLightning, BsDownload, BsFillSendPlusFill, BsPlay, BsSendExclamation, BsSendPlus } from 'react-icons/bs';
+import { BsFillSendPlusFill } from 'react-icons/bs';
+import { plans, data } from './data';
 
 function PricingTab() {
   const [element, controls] = useScroll();
-  const plans = [
-    {
-      name: "Basic",
-      price: 13,
-    },
-    {
-      name: "Pro",
-      price: 35,
-    },
-    {
-      name: "Expert",
-      price: 77,
-    },
-  ];
-
-  const data = [
-    {
-      value: "Full face R 250",
-      type: "Basic",
-    },
-    {
-      value: "Cheeks R 90",
-      type: "Basic",
-    },
-    {
-      value: "Jawline R 50",
-      type: "Basic",
-    },
-    {
-      value: "Lower Lip R 50",
-      type: "Basic",
-    },
-    {
-      value: "Upper Lip R 50",
-      type: "Basic",
-    },
-    {
-      value: "Under arms R 100",
-      type: "Basic",
-    },
-    {
-      value: "Full Legs R 450",
-      type: "Pro",
-    },
-    {
-      value: "Half Legs R 300",
-      type: "Pro",
-    },
-    {
-      value: "Daily Backups",
-      type: "Expert",
-    },
-    {
-      value: "One Click Setup",
-      type: "Expert",
-    },
-  ]
   
-  // function to navigate to the contact page
   const navigateToContact = () => {
     window.location.href = "/contact";
   }
 
-  //Make the mouse cursor a pointer when hovering over the book now and play buttons
   const changeCursor = (e) => {
     e.target.style.cursor = "pointer";
   }
@@ -87,65 +28,55 @@ function PricingTab() {
         <img src={pricing2} alt="background" className="bg2" />
       </div>
       <div className="pricing__title">
-        <p>Find your pricing plan</p>
-        <h2>Finding the best salons in your city could be time consuming..</h2>
+        <p>Find your price</p>
+        <h2>Providng the best prices that you can trust at all times..</h2>
+        <h3>Body Treatments longer than 30 minutes can have an extra 30 minutes at R280 each</h3>
       </div>
       <div className="pricing">
         {plans.map(({ name, price }, index) => {
-          return(
-            <motion.div className="pricing__plan" 
-            key={index}
-            variants={pricingAnimation}
-            animate={controls}
-            transition={{
-              delay: 0.03,
-              type: "tween",
-              duration: 0.8,
-            }}
+          return (
+            <motion.div
+              className="pricing__plan"
+              key={index}
+              variants={pricingAnimation}
+              animate={controls}
+              transition={{
+                delay: 0.03,
+                type: "tween",
+                duration: 0.8,
+              }}
             >
               <div className="pricing__plan__name">
                 <h2>{name}</h2>
                 <div className="pricing__plan__name__price">
-                  <span>R</span>
-                  <p>{price}</p>
+                  <span> </span>
                 </div>
               </div>
               <div className="pricing__plan__content">
                 <ul className={`pricing__plan__content__features ${name}`}>
                   {data.map(({ value, type }, index2) => {
-                    return (
-                      <Fragment key={index2}>
-                        {name === "Basic" ? (
-                          type === name ? (
-                            <li>{value}</li>
-                          ) : (
-                            <li className="line">{value}</li>
-                          )
-                        ) : name === "Pro" ? (
-                          type === "Basic" || type === name ? (
-                            <li>{value}</li>
-                          ) : (
-                            <li className="line">{value}</li>
-                          )
-                        ) : (
-                          name === "Expert" && <li>{value}</li>
-                        )}
-                      </Fragment>
-                    );
+                    let showItem = false;
+                    if (name === "Massage") {
+                      showItem = type === name;
+                    } else if (name === "Nails") {
+                      showItem = type === name;
+                    } else if (name === "Wax and Facial") {
+                      showItem = type === name;
+                    }
+                    return showItem ? (<li key={index2}>{value}</li>) : null;
                   })}
                 </ul>
                 <div onClick={navigateToContact} className="pricing__plan__content__actions" onMouseOver={changeCursor}>
                   <span>Book Now</span>
-                  <BsFillSendPlusFill className='play'/>
+                  <BsFillSendPlusFill className="play" />
                 </div>
               </div>
             </motion.div>
-          )
+          );
         })}
       </div>
     </Section>
-  )
-}
+  )};
 
 const Section = styled.section`
 min-height: 100vh;
@@ -210,7 +141,7 @@ overflow: hidden;
       flex-direction: column;
       color: var(--secondary-color);
       h2 {
-        font-size: 2rem;
+        font-size: 1.3rem;
         line-height: 1.3rem;
       }
       &__price {
@@ -221,10 +152,10 @@ overflow: hidden;
           position: absolute;
           top: 1rem;
           left: -0.9rem;
-          font-size: 1.3rem;
+          font-size: 0.7rem;
         }
         p {
-          font-size: 4rem;
+          font-size: 2rem;
           font-weight: bold;
         }
       }

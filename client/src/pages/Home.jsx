@@ -2,7 +2,7 @@ import Navbar from 'components/Navbar';
 import { motion } from 'framer-motion';
 import { homeAnimation } from 'animation';
 import styled from 'styled-components';
-import home from 'assets/home.png';
+import home from 'assets/bedcollage.jpg';
 import React from 'react'
 import Home from 'components/Home';
 import Footer from 'components/Footer';
@@ -13,6 +13,7 @@ import Video from 'components/Video';
 import Milestones from 'components/Milestones';
 import Blog from 'components/Blog';
 import Maps from 'components/Maps';
+import FloatingWhatsAppButton from 'components/FloatingButton';
 
 function HomePage() {
   return (
@@ -21,10 +22,10 @@ function HomePage() {
         <Blog/>
         <Maps/>
         <Milestones/>
-        
         <Video/>
         <Footer/>
         <ScrollToTop/>
+        <FloatingWhatsAppButton/>
     </motion.div>
 
     )

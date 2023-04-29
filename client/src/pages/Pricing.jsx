@@ -1,3 +1,4 @@
+import FloatingWhatsAppButton from 'components/FloatingButton';
 import Footer from 'components/Footer';
 import PricingTab from 'components/Pricing';
 import PricingHero from 'components/Pricinghero';
@@ -12,6 +13,7 @@ function Pricing() {
       <PricingTab/>
       <Footer/>
       <ScrollToTop/>
+      <FloatingWhatsAppButton/>
     </motion.div>
   )
 }

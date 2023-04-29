@@ -1,3 +1,4 @@
+import FloatingWhatsAppButton from 'components/FloatingButton';
 import Footer from 'components/Footer';
 import GalleryHero from 'components/GalleryHero';
 import Portfolio from 'components/Portfolio';
@@ -12,6 +13,7 @@ function OurWork() {
       <Portfolio/>
       <Footer/>
       <ScrollToTop/>
+      <FloatingWhatsAppButton/>
     </motion.div>
   )
 }

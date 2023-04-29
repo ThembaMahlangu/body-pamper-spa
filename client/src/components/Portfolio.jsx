@@ -1,14 +1,22 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
 import loadmore from "assets/loadmore.png";
-import portfolio3 from "assets/portfolio3.jpg";
-import portfolio4 from "assets/portfolio4.jpg";
-import portfolio5 from "assets/portfolio5.jpg";
-import portfolio6 from "assets/portfolio6.jpg";
-import portfolio7 from "assets/portfolio7.jpg";
-import portfolio8 from "assets/portfolio8.jpg";
-import portfolio9 from "assets/portfolio9.jpg";
-import portfolio10 from "assets/portfolio10.jpg";
+import portfolio3 from "assets/cleannails.jpg"
+import portfolio4 from "assets/chillers2.jpg"
+import portfolio5 from "assets/bedwithcrystals.jpg"
+import portfolio6 from "assets/djbongz.jpg"
+import portfolio7 from "assets/womeninpink.jpg"
+import portfolio8 from "assets/gift.jpg"
+import portfolio9 from "assets/bedcollage.jpg"
+import portfolio10 from "assets/chillers.jpg";
+import portfolio11 from "assets/prettynails.jpg"
+import portfolio12 from "assets/brightlight.jpg"
+import portfolio13 from "assets/pedicure.jpg"
+import portfolio14 from "assets/owner.jpg"
+import portfolio15 from "assets/meetup.jpg"
+import portfolio16 from "assets/hotstones.jpg"
+import portfolio17 from "assets/ringnails.jpg"
+import portfolio18 from "assets/widthnails.jpg";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { portfolioAnimations } from "animation";
@@ -42,14 +50,14 @@ function Portfolio() {
     </div>
     {showSecondGrid && (
     <div className="grid">
-        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-one grid-box"></motion.div>
-        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-two grid-box"></motion.div>
-        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-three grid-box"></motion.div>
-        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-four grid-box"></motion.div>
-        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-five grid-box"></motion.div>
-        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-six grid-box"></motion.div>
-        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-seven grid-box"></motion.div>
-        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-eight grid-box"></motion.div>
+        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-nine grid-box"></motion.div>
+        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-ten grid-box"></motion.div>
+        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-eleven grid-box"></motion.div>
+        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-twelve grid-box"></motion.div>
+        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-thirteen grid-box"></motion.div>
+        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-fourteen grid-box"></motion.div>
+        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-fifteen grid-box"></motion.div>
+        <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-sixteen grid-box"></motion.div>
     </div>
     )}
     <div className="portfolio-more" onClick={handleLoadMoreClick} onMouseOver={changeCursor}>
@@ -68,10 +76,10 @@ background-color: var(--secondary-color);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-  "one one two two"
-  "one one three four"
-  "five six seven seven"
-  "eight six seven seven";
+  "one two three four"
+  "five six seven eight"
+  "nine ten eleven twelve"
+  "thirteen fourteen fifteen sixteen";
   .grid-box {
     height: 15rem;
     width: 100%;
@@ -120,6 +128,53 @@ background-color: var(--secondary-color);
     &:nth-of-type(8) {
       grid-area: eight;
       background: url(${portfolio6}) no-repeat right center;
+      background-size: cover;
+      z-index: 10;
+    }
+    &:nth-of-type(9) {
+      grid-area: nine;
+      background: url(${portfolio11}) no-repeat right center;
+      background-size: cover;
+      height: 100%;
+      z-index: 10;
+    }
+    &:nth-of-type(10) {
+      grid-area: ten;
+      background: url(${portfolio12}) no-repeat center center;
+      background-size: cover;
+      z-index: 10;
+    }
+    &:nth-of-type(11) {
+      grid-area: eleven;
+      background: url(${portfolio13}) no-repeat right center;
+      background-size: cover;
+    }
+    &:nth-of-type(12) {
+      grid-area: twelve;
+      background: url(${portfolio14}) no-repeat center center;
+      background-size: cover;
+    }
+    &:nth-of-type(13) {
+      z-index: 10;
+      grid-area: thirteen;
+      background: url(${portfolio15}) no-repeat right center;
+      background-size: cover;
+    }
+    &:nth-of-type(14) {
+      grid-area: fourteen;
+      background: url(${portfolio16}) no-repeat center center;
+      background-size: cover;
+      height: 100%;
+    }
+    &:nth-of-type(15) {
+      grid-area: fifteen;
+      background: url(${portfolio17}) no-repeat right center;
+      background-size: cover;
+      height: 100%;
+    }
+    &:nth-of-type(16) {
+      grid-area: sixteen;
+      background: url(${portfolio18}) no-repeat right center;
       background-size: cover;
       z-index: 10;
     }
