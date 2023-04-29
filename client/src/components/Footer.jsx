@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { BsFacebook, BsTwitter, BsYoutube, BsBehance, BsInstagram, BsLinkedin } from 'react-icons/bs';
+import { BsFacebook, BsTwitter, BsYoutube, BsBehance, BsInstagram, BsLinkedin, BsGoogle, BsTiktok } from 'react-icons/bs';
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { footerTextAnimation } from "animation";
@@ -11,8 +11,8 @@ function Footer() {
     window.location.href = "https://www.facebook.com/BodyPamperSalon";
   }
 
-  const navigateToTwitter = () => {
-    window.location.href = "https://www.linkedin.com/in/lambert-fungai-maraura-2a7a594a/?originalSubdomain=za";
+  const navigateToTiktok = () => {
+    window.location.href = "https://www.tiktok.com/@bodypampersalon";
   }
 
   const navigateToInstagram = () => {
@@ -45,7 +45,7 @@ function Footer() {
       }}  
       >
         <BsFacebook onClick={navigateToFacebook} />
-        <BsLinkedin onClick={navigateToTwitter}/>
+        <BsTiktok onClick={navigateToTiktok}/>
         <BsInstagram onClick={navigateToInstagram} />
       </motion.div>
     </Foot>

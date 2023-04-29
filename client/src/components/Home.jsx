@@ -63,8 +63,8 @@ function Home() {
             <div className="col">
                 <strong>Working Hours</strong>
                 <p>Monday to Friday</p>
-                <p>08:00 to 18:00</p>
-                <p>Saturday 09:00 to 16:00</p>
+                <p>09:00 to 18:00</p>
+                <p>Saturday 09:00 to 17:00</p>
             </div>   
           </div>
       </motion.div>
@@ -155,4 +155,4 @@ const Section = styled.section`
   }
 `;
 
-export default Home
+export default Home;
