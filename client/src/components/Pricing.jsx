@@ -30,7 +30,7 @@ function PricingTab() {
       <div className="pricing__title">
         <p>Find your price</p>
         <h2>Providng the best prices that you can trust at all times..</h2>
-        <h3>Body Treatments longer than 30 minutes can have an extra 30 minutes at R280 each</h3>
+        <h3>Massage Treatments longer than 30 minutes can have an extra 30 minutes at R280 each</h3>
       </div>
       <div className="pricing">
         {plans.map(({ name, price }, index) => {
@@ -60,7 +60,7 @@ function PricingTab() {
                       showItem = type === name;
                     } else if (name === "Nails") {
                       showItem = type === name;
-                    } else if (name === "Wax and Facial") {
+                    } else if (name === "Facial and Wax") {
                       showItem = type === name;
                     }
                     return showItem ? (<li key={index2}>{value}</li>) : null;

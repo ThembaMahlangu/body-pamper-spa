@@ -17,8 +17,8 @@ function Navbar() {
     return href === location.pathname ? 'active' : '';
   };
   
-  return <Nav ref={element}
-  variants={navAnimation}
+  return <Nav ref={element} 
+  variants={navAnimation} 
   transition={{ delay: 0.1 }}
   animate={controls} 
   state={isNavOpen ? 1 : 0}

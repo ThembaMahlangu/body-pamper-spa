@@ -8,7 +8,7 @@ export const plans = [
       price: "",
     },
     {
-      name: "Wax and Facial",
+      name: "Facial and Wax",
       price: "",
     },
   ];
@@ -72,11 +72,11 @@ export const data = [
     },
     {
       value: "Facial from R360",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Facial skin peel R500",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Swedish full body massage R440",
@@ -132,67 +132,62 @@ export const data = [
     },
     {
       value: "Eyebrow shaping R70",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Upper lip R70",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Chin R70",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Full face R270",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Underarm R100",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Upper lip + chin R120",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Bikini R150",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Brazilian R310",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Upper lip + brow R120",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Full leg R250",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Half leg R180",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Chest R250",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Back R250",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
       value: "Eyebrow shape & tint R120",
-      type: "Wax and Facial",
+      type: "Facial and Wax",
     },
     {
-        value: "Hot stone (Area Specific) R100",
-        type: "Massage",
+      value: "Facial Skin Peel R500",
+      type: "Facial and Wax",
     },
-    {
-        value: "Back scrub R130",
-        type: "Massage",
-    },
-
   ]

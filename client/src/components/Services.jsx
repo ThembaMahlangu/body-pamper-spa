@@ -15,7 +15,7 @@ function ServicesTab() {
   const data = [
     {
       type: "Facial",
-      text: "Facial is a skin care treatment for the face, including steam, exfoliation, extraction, creams, lotions, facial masks, peels, and massage. It is normally performed in beauty salons, but it is also a common spa treatment.",
+      text: "A facial is a skin therapy which involves cleansing, steaming, exfoliation, extracting, massage and the application of a skin type specific mask.",
       image: service1,
     },
     {
@@ -30,13 +30,18 @@ function ServicesTab() {
     },
     {
       type: "Massages",
-      text: "Massage is the manipulation of soft tissues in the body. Massage techniques are commonly applied with hands, fingers, elbows, knees, forearms, feet, or a device. The purpose of massage is generally for the treatment of body stress or pain.",
-      image: service2,
+      text: "Massage is the manipulation of soft tissues in the body. Massage techniques are commonly applied with hands, fingers, elbows, .",
+      image: service1,
     },
     {
-      type: "House Calls",
-      text: "If you think you could use our service by us coming to you, feel free as we are available to come to you. We charge R9 per km.",
+      type: "HouseCalls",
+      text: "When you need our services at the comfort of your home, feel free to contact us. We charge R9 per Km.",
       image: service3,
+    },
+    {
+      type: "Body wraps and Scrubs.",
+      text: "Body wraps also known as body mask is a spa treatment created to enhance the appearance and health of the skin. It involves the application of a specified nourishing or slimming formula to your body.",
+      image: service1,
     },
   ];
   return <Section id="services" ref={element}>

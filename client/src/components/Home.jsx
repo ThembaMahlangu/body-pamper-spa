@@ -38,34 +38,35 @@ function Home() {
           <div className="grid">
             <div className="col">
                 <strong>Beauty Spa</strong>
-                <p>Body Pamper Academy</p>
+                <p>Body Pamper Spa</p>
             </div>
             <div className="col">
                 <strong>Email</strong>
                 <p>info@bodypampersalon.co.za</p>
             </div> 
             <div className="col">
-                <strong>Mobile</strong>
-                <p>+2743 721 3138</p>
+                <strong>Contact No.</strong>
+                <p>+27 43 721 3138</p>
+                <p className='mobile-bell'>+27 84 750 1407</p>
             </div> 
             <div className="col">
                 <strong>Address</strong>
                 <p>9 Surrey Rd</p>
+                <p>Vincent</p>
                 <p>East London</p>
-                <p>Easten Cape</p>
             </div> 
             <div className="col">
                 <strong>Services</strong>
                 <p>Facials</p>
                 <p>Massages</p>
-                <p>Manicures and Pedicures</p>
+                <p>Manicures, Pedicures & More</p>
             </div> 
             <div className="col">
                 <strong>Working Hours</strong>
                 <p>Monday to Friday</p>
                 <p>09:00 to 18:00</p>
                 <p>Saturday 09:00 to 17:00</p>
-            </div>   
+            </div>
           </div>
       </motion.div>
     </Section>

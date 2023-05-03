@@ -10,14 +10,14 @@ function Skills() {
   const skillsData = [
     {
       name: "Facial",
-      amount: 75,
+      amount: 80,
     },
     {
       name: "Skin",
-      amount: 50,
+      amount: 85,
     },
     {
-      name: "SPA",
+      name: "Massages",
       amount: 90,
     },
     {
@@ -62,12 +62,10 @@ function Skills() {
         </div>
         <div className="skills__content">
           <p className="title">
-            Beauty Services and Products
+            Self-care Services
           </p>
           <p className="description">
-            To be a successful beautician, you should have a wide range 
-            of skills in beauty services, good communication skills, 
-            and the ability to advise clients on suitable hairstyles.
+          We pride ourselves in having a wide range of skills that aid in enhancing the quality of guest services. 
           </p>
         </div>
       </div>

@@ -48,7 +48,7 @@ function Portfolio() {
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-seven grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-eight grid-box"></motion.div>
     </div>
-    {showSecondGrid && (
+    {/* {showSecondGrid && (
     <div className="grid">
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-nine grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-ten grid-box"></motion.div>
@@ -59,7 +59,7 @@ function Portfolio() {
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-fifteen grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-sixteen grid-box"></motion.div>
     </div>
-    )}
+    )} */}
     <div className="portfolio-more" onClick={handleLoadMoreClick} onMouseOver={changeCursor}>
         <span>Load More</span>
         <img src={loadmore} alt="Load More" />
