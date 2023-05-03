@@ -40,7 +40,7 @@ router.post('/', [
         booking.save().then((result) => {
             const mailOptions = {
                 from: 'Body Pamper Web Notifications <',
-                to: 'info@bodypampersalon.co.za',
+                to: 'info@bodypampersalon.co.za' && 'vdayimani@icloud.com',
                 subject: `New ${req.body.service} Submission`,
                 text: `Hello Admin,
 
