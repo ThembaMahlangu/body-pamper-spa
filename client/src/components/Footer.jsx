@@ -33,7 +33,7 @@ function Footer() {
 
         &nbsp;|&nbsp;
         
-        Powered by <i href="wa.me/+27769360246">AsyncFam</i>
+        Powered by <a href="wa.me/+27769360246">AsyncFam</a>
       </motion.span>
       <motion.div className="footer__social__icons"
       variants={footerTextAnimation}

@@ -5,12 +5,11 @@ import service2 from "assets/service2.png";
 import service3 from "assets/service3.png";
 import play from "assets/play.png";
 import Title from './Title';
-import { useScroll } from "components/useScroll";
+// import { useScroll } from "components/useScroll";
 import { motion } from "framer-motion";
 import { servicesAnimations } from "animation";
 
 function ServicesTab() {
-  const [element, controls] = useScroll();
 
   const data = [
     {
@@ -44,14 +43,13 @@ function ServicesTab() {
       image: service1,
     },
   ];
-  return <Section id="services" ref={element}>
+  return <Section id="services">
     <Title value="services" />
     <div className="services">
         {data.map(({type,text,image},index) => {
             return (
               <motion.div className="services__service"
               variants={servicesAnimations}
-              animate={controls}
               transition={{
                 delay: 0.03,
                 type: "tween",

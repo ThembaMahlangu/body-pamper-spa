@@ -30,9 +30,9 @@ function Navbar() {
           src={logo} 
           alt="Body Pamper Spa Logo" 
           className="logo" 
-          style={{ width: 125, height: 125 }} />
+          style={{ width: 140, height: 140 }} />
         </span>
-      </a>  
+      </a>
       <div className="toggle">
         {isNavOpen ? (
           <MdClose onClick={ () => setIsNavOpen(false)} />

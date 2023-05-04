@@ -75,10 +75,6 @@ export const data = [
       type: "Facial and Wax",
     },
     {
-      value: "Facial skin peel R500",
-      type: "Facial and Wax",
-    },
-    {
       value: "Swedish full body massage R440",
       type: "Massage",
     },
@@ -187,7 +183,7 @@ export const data = [
       type: "Facial and Wax",
     },
     {
-      value: "Facial Skin Peel R500",
+      value: "Facial Skin Peel from R500",
       type: "Facial and Wax",
     },
   ]
