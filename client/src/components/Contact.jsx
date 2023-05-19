@@ -14,7 +14,7 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    const url = `https://bodypamper-server.onrender.com/api/bookings`
+    const url = `https://bodypamperserver.onrender.com/api/bookings`
     const data = {
       service: selectedOption,
       name: e.target.name.value,
