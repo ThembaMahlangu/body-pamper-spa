@@ -14,12 +14,14 @@ import Milestones from 'components/Milestones';
 import Blog from 'components/Blog';
 import Maps from 'components/Maps';
 import FloatingWhatsAppButton from 'components/FloatingButton';
+import Promotions from 'components/Promotions';
 
 function HomePage() {
   return (
     <motion.div>
         <Home/>
         <Blog/>
+        <Promotions />
         <Maps/>
         <Milestones/>
         <Video/>

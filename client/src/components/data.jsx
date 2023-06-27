@@ -186,4 +186,12 @@ export const data = [
       value: "Facial Skin Peel from R500",
       type: "Facial and Wax",
     },
+    {
+      value: "Eye Lashes from R300",
+      type: "Facial and Wax",
+    },
+    {
+      value: "Pedicure R250",
+      type: "Nails",
+    }
   ]
