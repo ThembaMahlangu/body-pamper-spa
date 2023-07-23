@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import heropic from "assets/2.png"
+import heropic from "assets/good1.jpeg"
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
@@ -74,7 +74,7 @@ function Home() {
 }
 
 const Section = styled.section`
-  background: url(${heropic}) no-repeat center;
+  background: url(${heropic}) no-repeat center center/cover;
   min-height: 100vh;
   background-size: cover;
   position: relative;

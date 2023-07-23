@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import home from "assets/views2.png";
+import home from "assets/good5.jpeg";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
 import { homeAnimation } from "animation";

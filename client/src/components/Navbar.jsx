@@ -100,7 +100,7 @@ const Nav = styled(motion.nav)`
       }
       li {
         a {
-          color: black;
+          color: white;
           text-decoration: none;
           font-weight: 400;
           font-size: 0.9rem;
