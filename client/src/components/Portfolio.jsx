@@ -86,83 +86,83 @@ background-color: var(--secondary-color);
     cursor: pointer;
     &:nth-of-type(1) {
       grid-area: one;
-      background: url(${portfolio3}) no-repeat right center;
+      background: url('/1.jpg') no-repeat right center;
       background-size: cover;
       height: 100%;
       z-index: 10;
     }
     &:nth-of-type(2) {
       grid-area: two;
-      background: url(${portfolio4}) no-repeat center center;
+      background: url('/2.jpg') no-repeat center center;
       background-size: cover;
       z-index: 10;
     }
     &:nth-of-type(3) {
       grid-area: three;
-      background: url(${portfolio5}) no-repeat right center;
+      background: url('/3.jpg') no-repeat right center;
       background-size: cover;
     }
     &:nth-of-type(4) {
       grid-area: four;
-      background: url(${portfolio10}) no-repeat center center;
+      background: url('/4.jpg') no-repeat center center;
       background-size: cover;
     }
     &:nth-of-type(5) {
       z-index: 10;
       grid-area: five;
-      background: url(${portfolio7}) no-repeat right center;
+      background: url('/5.jpg') no-repeat right center;
       background-size: cover;
     }
     &:nth-of-type(6) {
       grid-area: six;
-      background: url(${portfolio8}) no-repeat center center;
+      background: url('/6.jpg') no-repeat center center;
       background-size: cover;
       height: 100%;
     }
     &:nth-of-type(7) {
       grid-area: seven;
-      background: url(${portfolio9}) no-repeat right center;
+      background: url('/7.jpg') no-repeat right center;
       background-size: cover;
       height: 100%;
     }
     &:nth-of-type(8) {
       grid-area: eight;
-      background: url(${portfolio6}) no-repeat right center;
+      background: url('/8.jpg') no-repeat right center;
       background-size: cover;
       z-index: 10;
     }
     &:nth-of-type(9) {
       grid-area: nine;
-      background: url(${portfolio11}) no-repeat right center;
+      background: url('/9.jpg') no-repeat right center;
       background-size: cover;
       height: 100%;
       z-index: 10;
     }
     &:nth-of-type(10) {
       grid-area: ten;
-      background: url(${portfolio12}) no-repeat center center;
+      background: url('/10.jpg') no-repeat center center;
       background-size: cover;
       z-index: 10;
     }
     &:nth-of-type(11) {
       grid-area: eleven;
-      background: url(${portfolio13}) no-repeat right center;
+      background: url('/11.jpg') no-repeat right center;
       background-size: cover;
     }
     &:nth-of-type(12) {
       grid-area: twelve;
-      background: url(${portfolio14}) no-repeat center center;
+      background: url('/12.jpg') no-repeat center center;
       background-size: cover;
     }
     &:nth-of-type(13) {
       z-index: 10;
       grid-area: thirteen;
-      background: url(${portfolio15}) no-repeat right center;
+      background: url('/13.jpg') no-repeat right center;
       background-size: cover;
     }
     &:nth-of-type(14) {
       grid-area: fourteen;
-      background: url(${portfolio16}) no-repeat center center;
+      background: url('/14.jpg') no-repeat center center;
       background-size: cover;
       height: 100%;
     }
