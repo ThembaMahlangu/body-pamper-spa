@@ -1,0 +1,51 @@
+.component {
+    min-height: 100vh;
+    padding-top: 110px;
+    background-color: var(--primary-color);
+}
+.title {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+}
+.desc {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.specials {
+    padding: 30px;
+}
+.special-title {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    text-align: center;
+}
+.special-desc {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .component {
+        padding-top: 80px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .component {
+        padding-top: 10px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .desc {
+        font-size: 1.2rem;
+    }
+}

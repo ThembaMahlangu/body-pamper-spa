@@ -25,9 +25,6 @@ function Home() {
               We have a team of highly skilled and experienced professionals who are dedicated to providing the best services to our clients.
             </p>   */}
           </div>
-            <a href='/contact'>
-              <BsPlay className="play"/>
-            </a>
         </div>  
       </motion.div>
 
