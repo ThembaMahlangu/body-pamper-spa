@@ -39,7 +39,7 @@ function Home() {
             </div>
             <div className="col">
                 <strong>Email</strong>
-                <p>info@bodypampersalon.co.za</p>
+                <p>bodypamperspa@outlook.com</p>
             </div> 
             <div className="col">
                 <strong>Contact No.</strong>

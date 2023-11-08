@@ -6,7 +6,7 @@ export default function Special() {
     <div className="component">
         <div className="titledesc">
             <h1 className="title">Black Friday Specials</h1>
-            <p className="desc">We have black friday special which is 30% off on selected services. These offers are valid till 25th November 2023.</p>
+            <p className="desc">We have black friday special which is 30% off on selected services. These offers are valid from 20th November - 25th November 2023.</p>
         </div>
         <div className="specials">
             {/* Bullet Points of each special */}
@@ -15,28 +15,21 @@ export default function Special() {
                     <BsStars />
                     Special #1
                 </h1>
-                <p className="special-desc">- Group starting from 3 people get 30% off massage treatment (hotstone, Arometherapy and deep tissue)</p>
+                <p className="special-desc">- Group starting from 3 people get 30% off massage treatment (Hotstone, Arometherapy and Deep Tissue)</p>
             </div>
             <div className="special" style={{marginTop: "1rem"}}>
                 <h1 className="special-title">
                     <BsStars />
                     Special #2
                 </h1>
-                <p className="special-desc">- 20% off Full body scrub</p>
+                <p className="special-desc">- 20% off Full Body Scrub</p>
             </div>
             <div className="special" style={{marginTop: "1rem"}}>
                 <h1 className="special-title">
                     <BsStars />
                     Special #3
                 </h1>
-                <p className="special-desc">- 20% off body wrap</p>
-            </div>
-            <div className="special" style={{marginTop: "1rem"}}>
-                <h1 className="special-title">
-                    <BsStars />
-                    Special #4
-                </h1>
-                <p className="special-desc">- Lipo injections R1000 per session</p>
+                <p className="special-desc">- 20% off Body Wrap</p>
             </div>
         </div>
     </div>

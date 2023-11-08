@@ -31,6 +31,7 @@ function PricingTab() {
         <p>Find your price</p>
         <h2>Providng the best prices that you can trust at all times..</h2>
         <h3>Massage Treatments longer than 30 minutes can have an extra 30 minutes at R280 each</h3>
+        <h3 style={{paddingTop: "1rem", textAlign: "center"}}>NEW!!! - Lipo injections R1000 per session</h3>
       </div>
       <div className="pricing">
         {plans.map(({ name, price }, index) => {

@@ -1,51 +1,87 @@
+/* Special.css */
 .component {
-    min-height: 100vh;
-    padding-top: 110px;
     background-color: var(--primary-color);
-}
-.title {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 2rem;
     text-align: center;
-    color: var(--secondary-color);
-    font-size: 2.5rem;
-}
-.desc {
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.specials {
-    padding: 30px;
-}
-.special-title {
-    color: var(--secondary-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 120px;
+  }
+  
+  .titledesc {
+    margin-bottom: 2rem;
+  }
+  
+  .title {
     font-size: 2rem;
-    text-align: center;
-}
-.special-desc {
-    color: white;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .desc {
     font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
+    color: white;
+    line-height: 1.5;
+  }
+  
+  .specials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .special {
+    text-align: left;
+    border-left: 4px solid #f9c74f;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .special-title {
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .special-title svg {
+    margin-right: 0.5rem;
+    color: #f9c74f;
+    font-size: 1.5rem;
+  }
+  
+  .special-desc {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
     .component {
-        padding-top: 80px;
+      /* padding: 1rem; */
+      padding-top: 80px;
     }
+  
     .title {
-        font-size: 2rem;
+      font-size: 1.5rem;
     }
-}
+  
+    .special {
+      padding-left: 0.5rem;
+      max-width: 100%;
+    }
+  }
 
 @media (max-width: 576px) {
     .component {
         padding-top: 10px;
-    }
-    .title {
-        font-size: 2rem;
-    }
-    .desc {
-        font-size: 1.2rem;
     }
 }
